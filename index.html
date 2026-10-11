@@ -1,202 +1,360 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Los Diarios de una Boticaria</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" 
-    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-    
-<header class="encabezado">
-        <div class="contenedor encabezado-contenido">
-            <div class="marca">
-                <img src="img/logo.webp" alt="Logotipo de Los Diarios de una Boticaria" class="logo">
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor encabezado-contenido">
+        <div class="marca">
+          <img
+            src="img/logo.webp"
+            alt="Logotipo de Los Diarios de una Boticaria"
+            class="logo"
+          />
 
-            <div>
-                <h1>Los Diarios de una Boticaria</h1>
-                <p>Medicina, misterios e intrigas en el palacio.</p>    
-            </div>
+          <div>
+            <h1>Los Diarios de una Boticaria</h1>
+            <p>Medicina, misterios e intrigas en el palacio.</p>
+          </div>
         </div>
         <nav class="menu">
-            <a href="#inicio">Inicio</a>
-           <a href="#personajes">Personajes</a>
-           <a href="#remedios">Remedios</a>
-           <a href="#contacto">Contacto</a>
+          <a href="#inicio">Inicio</a>
+          <a href="#personajes">Personajes</a>
+          <a href="#remedios">Remedios</a>
+          <a href="#contacto">Contacto</a>
         </nav>
-    </div>
+      </div>
     </header>
-<main>
-    <section id="inicio" class="hero">
+
+    <main>
+      <section id="inicio" class="hero">
         <div class="contenedor hero-contenido">
-            <div class="hero-texto">
-                <span class="etiqueta">
-                    Misterios del palacio
-                </span>
-                    <h2>Los Diarios de una Boticaria</h2>
-                    <p>Una historia de medicina, misterios e intrigas en el palacio.</p>
-                    <a href="#personajes" class="boton boton-principal">Ver personajes</a>
+          <div class="hero-texto">
+            <span class="etiqueta">Misterios del palacio</span>
+            <h2>Los Diarios de una Boticaria</h2>
+            <p>Una historia de medicina, misterios e intrigas en el palacio.</p>
+            <a href="#personajes" class="boton boton-principal"
+              >Ver personajes</a
+            >
+          </div>
+          <div class="hero-imagen">
+            <div class="tarjeta-destacada">
+              <img
+                src="img/maomao.webp"
+                alt="Maomao, la boticaria del palacio"
+              />
+              <h3>Maomao</h3>
+              <p>Boticaria y probadora de venenos en el palacio imperial.</p>
             </div>
-            <div class="hero-imagen">
-                <div class="tarjeta-destacada">
-                          <img src="img/maomao.webp" alt="Maomao, la boticaria del palacio">
-                            <h3>Maomao</h3>
-                            <p>Boticaria y probadora de venenos en el palacio imperial.</p>
-                </div>
-
-            </div>
-
+          </div>
         </div>
-        
-    </section>
-    <section id="personajes" class="seccion">
+      </section>
+
+      <section id="personajes" class="seccion">
         <div class="contenedor">
-        <div class="titulo-seccion">
+          <div class="titulo-seccion">
             <span>Personajes principales</span>
             <h2>Conoce a quienes habitan el palacio</h2>
-            <p>Tres personajes unidos por los secretos, la medicina y la vida en la corte imperial.</p>
-        </div>
-        <div class="servicios-grid">
-            <article class="tarjeta-servicio">
-                    <div class="icono-servicio">
-                        <img src="img/maomao2.jpg" alt="Maomao, la boticaria">
-                    </div>
-                    <h3>Maomao</h3>
-                    <p>Boticaria y probadora de venenos, curiosa y experta en plantas medicinales.</p>
-                <ul>
-                    <li>Conoce remedios y venenos.</li>
-                    <li>Trabaja en el palacio interior.</li>
-                    <li>Investiga misterios con ingenio.</li>
-                </ul>
+            <p>
+              Tres personajes unidos por los secretos, la medicina y la vida en
+              la corte imperial.
+            </p>
+          </div>
+          <div class="servicios-grid">
+            <article class="tarjeta-servicio" id="tarjeta-maomao">
+              <div class="icono-servicio">
+                <img src="img/maomao2.jpg" alt="Maomao, la boticaria" />
+              </div>
+              <h3>Maomao</h3>
+              <p>
+                Boticaria y probadora de venenos, curiosa y experta en plantas
+                medicinales.
+              </p>
+              <ul>
+                <li>Conoce remedios y venenos.</li>
+                <li>Trabaja en el palacio interior.</li>
+                <li>Investiga misterios con ingenio.</li>
+              </ul>
             </article>
-            <article class="tarjeta-servicio">
-                <div class="icono-servicio">
-                    <img src="img/Jinshi.webp" alt="Jinshi, administrador del palacio">
-                </div>
-                <h3>Jinshi</h3>
-                <p>Administrador del palacio interior, distinguido y envuelto en intrigas.</p>
-                <ul>
-                    <li>Organiza la vida de la corte.</li>
-                    <li>Confía en las habilidades de Maomao.</li>
-                    <li>Guarda secretos del palacio.</li>
-                </ul>
+
+            <article class="tarjeta-servicio" id="tarjeta-jinshi">
+              <div class="icono-servicio">
+                <img
+                  src="img/Jinshi.webp"
+                  alt="Jinshi, administrador del palacio"
+                />
+              </div>
+              <h3>Jinshi</h3>
+              <p>
+                Administrador del palacio interior, distinguido y envuelto en
+                intrigas.
+              </p>
+              <ul>
+                <li>Organiza la vida de la corte.</li>
+                <li>Confía en las habilidades de Maomao.</li>
+                <li>Guarda secretos del palacio.</li>
+              </ul>
             </article>
-            <article class="tarjeta-servicio">
-            <div class="icono-servicio">
-                <img src="img/Gaoshun.jpg" alt="Gaoshun, asistente de Jinshi">
-            </div>
-            <h3>Gaoshun</h3>
-            <p>Leal asistente de Jinshi y apoyo constante en sus tareas.</p>
-            <ul>
+
+            <article class="tarjeta-servicio" id="tarjeta-gaoshun">
+              <div class="icono-servicio">
+                <img src="img/Gaoshun.jpg" alt="Gaoshun, asistente de Jinshi" />
+              </div>
+              <h3>Gaoshun</h3>
+              <p>Leal asistente de Jinshi y apoyo constante en sus tareas.</p>
+              <ul>
                 <li>Acompaña a Jinshi en el palacio.</li>
                 <li>Es atento y responsable.</li>
                 <li>Ayuda a mantener el orden.</li>
-            </ul>
+              </ul>
             </article>
-        </div>
-        </div>
-    </section>
-    <section id="remedios" class="seccion seccion-secundaria">
-            <div class="contenedor">
-            <div class="informacion-grid">
-                <div>
-                    <span class="etiqueta">Remedios e hierbas</span>
-                    <h2>El conocimiento de Maomao</h2>
-                    <p>Las plantas pueden aliviar dolencias, aunque algunas esconden peligros. Maomao estudia sus propiedades con cuidado.</p>
-                   </div>
-                   <div class="panel-caracteristicas">
-
-                    <div class="caracteristica">
-                        <span>
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <div>
-                            <strong>Artemisa</strong>
-                            <p>Hierba aromática conocida por sus usos tradicionales.</p>
-                        </div>
-
-                    </div>
-                    <div class="caracteristica">
-                        <span>
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <div>
-                            <strong>Jengibre</strong>
-                            <p>Raíz de aroma intenso usada en remedios y preparaciones.</p>
-                        </div>
-
-                    </div>
-                    <div class="caracteristica">
-                        <span>
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <div>
-                            <strong>Belladona</strong>
-                            <p>Planta tóxica que Maomao reconoce y manipula con extrema precaución.</p>
-                        </div>
-                    </div>
-
-                   </div>
-
-
-            </div>    
-
-            </div>
-
-          </section>
-          <section id="contacto" class="seccion">
-          <div class="contenedor">
-            <div class="contacto">
-                <div>
-                    <span class="etiqueta">Contacto</span>
-                    <h2>¿Necesitas ayuda?</h2>
-                    <p>¿Tienes alguna pregunta sobre la historia o sus personajes?</p>
-                </div>
-                <div>
-                    <button type="button" id="btnContacto" class="boton boton-principal">
-                        <i class="fa-solid fa-envelope"></i>
-                       Enviar consulta
-                    </button>
-                </div>
-            </div>
-
           </div>
-          </section>
-
-    </main>
-    <footer class="pie">
-        <div class="contenedor pie-contenido">
-            <p>Proyecto Actividad 2 - Desarrollo Web. 2026.</p>
-            <p id="anio"></p>
-
         </div>
-    </footer>
-    <div id="modalContacto" class="modal">
-        <div class="modal-contenido">
-            <button type="button" id="cerrarModal" class="cerrar-modal" aria-label="Cerrar">&times;
+      </section>
 
-            </button>
-            <div class="modal-icono">
-                <i class="fa-solid fa-envelope-open-text"></i>
-
+      <section id="remedios" class="seccion seccion-secundaria">
+        <div class="contenedor">
+          <div class="informacion-grid">
+            <div>
+              <span class="etiqueta">Remedios e hierbas</span>
+              <h2>El conocimiento de Maomao</h2>
+              <p>
+                Las plantas pueden aliviar dolencias, aunque algunas esconden
+                peligros. Maomao estudia sus propiedades con cuidado.
+              </p>
             </div>
-            <h2>Consulta recibida</h2>
-            <p>Gracias por tu interés en Los Diarios de una Boticaria.</p>
-            <button type="button" id="aceptarModal" class="boton boton-principal">
-                <i class="fa-solid fa-check"></i>Aceptar
-
-            </button>
-
+            <div class="panel-caracteristicas">
+              <div class="caracteristica">
+                <span><i class="fa-solid fa-check"></i></span>
+                <div>
+                  <strong>Artemisa</strong>
+                  <p>Hierba aromática conocida por sus usos tradicionales.</p>
+                </div>
+              </div>
+              <div class="caracteristica">
+                <span><i class="fa-solid fa-check"></i></span>
+                <div>
+                  <strong>Jengibre</strong>
+                  <p>
+                    Raíz de aroma intenso usada en remedios y preparaciones.
+                  </p>
+                </div>
+              </div>
+              <div class="caracteristica">
+                <span><i class="fa-solid fa-check"></i></span>
+                <div>
+                  <strong>Belladona</strong>
+                  <p>
+                    Planta tóxica que Maomao reconoce y manipula con extrema
+                    precaución.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
+      <section id="contacto" class="seccion">
+        <div class="contenedor">
+          <div class="contacto">
+            <div>
+              <span class="etiqueta">Contacto</span>
+              <h2>¿Necesitas ayuda?</h2>
+              <p>¿Tienes alguna pregunta sobre la historia o sus personajes?</p>
+            </div>
+            <div>
+              <button
+                type="button"
+                id="btnContacto"
+                class="boton boton-principal"
+              >
+                <i class="fa-solid fa-envelope"></i>
+                Enviar consulta
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor pie-contenido">
+        <p>Proyecto Actividad 2 - Desarrollo Web. 2026.</p>
+        <p id="anio"></p>
+      </div>
+    </footer>
+
+    <!-- ===== MODAL DE CONTACTO (existente) ===== -->
+    <div id="modalContacto" class="modal">
+      <div class="modal-contenido">
+        <button
+          type="button"
+          id="cerrarModal"
+          class="cerrar-modal"
+          aria-label="Cerrar"
+        >
+          &times;
+        </button>
+        <div class="modal-icono">
+          <i class="fa-solid fa-envelope-open-text"></i>
+        </div>
+        <h2>Consulta recibida</h2>
+        <p>Gracias por tu interés en Los Diarios de una Boticaria.</p>
+        <button type="button" id="aceptarModal" class="boton boton-principal">
+          <i class="fa-solid fa-check"></i>Aceptar
+        </button>
+      </div>
     </div>
 
-    <script src="js/app.js"></script>
+    <!-- ===== MODAL MAOMAO ===== -->
+    <div id="modalMaomao" class="modal">
+      <div class="modal-contenido modal-personaje">
+        <button
+          type="button"
+          class="cerrar-modal"
+          data-cerrar="modalMaomao"
+          aria-label="Cerrar"
+        >
+          &times;
+        </button>
+        <div class="modal-icono">
+          <i class="fa-solid fa-flask"></i>
+        </div>
+        <h2>Maomao</h2>
+        <p class="modal-subtitulo">La boticaria del palacio interior</p>
+        <p>
+          Nacida en el barrio de las flores, Maomao creció entre hierbas,
+          ungüentos y venenos. Su curiosidad y su mente analítica la llevaron a
+          convertirse en una de las figuras más brillantes del palacio imperial.
+        </p>
+        <ul class="modal-lista">
+          <li><strong>Especialidad:</strong> Farmacología y toxicología.</li>
+          <li>
+            <strong>Rol:</strong> Dama de compañía y probadora de venenos.
+          </li>
+          <li>
+            <strong>Personalidad:</strong> Curiosa, pragmática y algo
+            sarcástica.
+          </li>
+          <li>
+            <strong>Objetivo:</strong> Resolver los misterios que amenazan la
+            corte.
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="boton boton-principal"
+          data-cerrar="modalMaomao"
+        >
+          <i class="fa-solid fa-check"></i> Cerrar
+        </button>
+      </div>
+    </div>
 
-</body>
+    <!-- ===== MODAL JINSHI ===== -->
+    <div id="modalJinshi" class="modal">
+      <div class="modal-contenido modal-personaje">
+        <button
+          type="button"
+          class="cerrar-modal"
+          data-cerrar="modalJinshi"
+          aria-label="Cerrar"
+        >
+          &times;
+        </button>
+        <div class="modal-icono">
+          <i class="fa-solid fa-user-tie"></i>
+        </div>
+        <h2>Jinshi</h2>
+        <p class="modal-subtitulo">El administrador del palacio interior</p>
+        <p>
+          De apariencia impecable y modales refinados, Jinshi supervisa la vida
+          diaria del palacio interior. Detrás de su sonrisa se esconden
+          responsabilidades enormes y secretos que pocos conocen.
+        </p>
+        <ul class="modal-lista">
+          <li><strong>Cargo:</strong> Administrador del palacio interior.</li>
+          <li>
+            <strong>Rol:</strong> Coordina a las damas de la corte y los asuntos
+            internos.
+          </li>
+          <li>
+            <strong>Personalidad:</strong> Carismático, observador y
+            estratégico.
+          </li>
+          <li>
+            <strong>Conexión:</strong> Confía en el ingenio de Maomao para
+            resolver casos.
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="boton boton-principal"
+          data-cerrar="modalJinshi"
+        >
+          <i class="fa-solid fa-check"></i> Cerrar
+        </button>
+      </div>
+    </div>
+
+    <!-- ===== MODAL GAOSHUN ===== -->
+    <div id="modalGaoshun" class="modal">
+      <div class="modal-contenido modal-personaje">
+        <button
+          type="button"
+          class="cerrar-modal"
+          data-cerrar="modalGaoshun"
+          aria-label="Cerrar"
+        >
+          &times;
+        </button>
+        <div class="modal-icono">
+          <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <h2>Gaoshun</h2>
+        <p class="modal-subtitulo">El leal asistente de Jinshi</p>
+        <p>
+          Discreto, eficiente y siempre atento, Gaoshun acompaña a Jinshi en
+          cada tarea dentro del palacio. Su experiencia y su calma lo convierten
+          en un pilar fundamental de la corte.
+        </p>
+        <ul class="modal-lista">
+          <li><strong>Rol:</strong> Asistente personal de Jinshi.</li>
+          <li>
+            <strong>Funciones:</strong> Coordina tareas y mantiene el orden.
+          </li>
+          <li><strong>Personalidad:</strong> Leal, responsable y reservado.</li>
+          <li>
+            <strong>Valor:</strong> Apoyo constante en los momentos más
+            delicados.
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="boton boton-principal"
+          data-cerrar="modalGaoshun"
+        >
+          <i class="fa-solid fa-check"></i> Cerrar
+        </button>
+      </div>
+    </div>
+
+    <!-- Scripts: el de los compañeros primero, el nuevo después -->
+    <script src="js/app.js"></script>
+    <script src="js/modales-personajes.js"></script>
+  </body>
 </html>

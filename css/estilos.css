@@ -613,7 +613,15 @@ a { text-decoration: none; color: inherit; }
 }
 
 .modal-lista li { margin-bottom: 0.5rem; color: var(--muted); }
-.modal-lista li::before { content: "● "; color: var(--secondary); }
+.modal-lista li::before {
+  content: "\f111";
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  font-size: 0.5em;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  color: var(--secondary);
+}
 .modal-lista li strong { color: var(--text); }
 
 .modal-personaje .boton { display: block; margin-left: auto; }

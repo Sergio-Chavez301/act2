@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Los Diarios de una Boticaria</title>
+    <title>Los Diarios de una Boticaria </title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
@@ -12,7 +18,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
@@ -24,10 +29,9 @@
             alt="Logotipo de Los Diarios de una Boticaria"
             class="logo"
           />
-
           <div>
             <h1>Los Diarios de una Boticaria</h1>
-            <p>Medicina, misterios e intrigas en el palacio.</p>
+            <p>Los Diarios de una Boticaria</p>
           </div>
         </div>
         <nav class="menu">
@@ -43,19 +47,22 @@
       <section id="inicio" class="hero">
         <div class="contenedor hero-contenido">
           <div class="hero-texto">
-            <span class="etiqueta">Misterios del palacio</span>
+            <span class="etiqueta">Misterios del palacio · Crónicas de la Corte Imperial</span>
             <h2>Los Diarios de una Boticaria</h2>
             <p>Una historia de medicina, misterios e intrigas en el palacio.</p>
-            <a href="#personajes" class="boton boton-principal"
-              >Ver personajes</a
-            >
+            <blockquote class="cita">
+              "El veneno y la medicina son las dos caras de una misma moneda.
+              Todo depende de la dosis y de la intención de quien lo administra."
+              <cite>— Cuaderno de notas de Maomao</cite>
+            </blockquote>
+            <div class="hero-botones">
+              <a href="#personajes" class="boton boton-principal">Ver personajes</a>
+              <a href="#remedios" class="boton boton-secundario">Tratado de venenos y remedios</a>
+            </div>
           </div>
           <div class="hero-imagen">
             <div class="tarjeta-destacada">
-              <img
-                src="img/maomao.webp"
-                alt="Maomao, la boticaria del palacio"
-              />
+              <img src="img/maomao.webp" alt="Maomao, la boticaria del palacio" />
               <h3>Maomao</h3>
               <p>Boticaria y probadora de venenos en el palacio imperial.</p>
             </div>
@@ -75,10 +82,11 @@
           </div>
           <div class="servicios-grid">
             <article class="tarjeta-servicio" id="tarjeta-maomao">
+              <span class="expediente">Expediente I · Hougong</span>
+              <h3>Maomao</h3>
               <div class="icono-servicio">
                 <img src="img/maomao2.jpg" alt="Maomao, la boticaria" />
               </div>
-              <h3>Maomao</h3>
               <p>
                 Boticaria y probadora de venenos, curiosa y experta en plantas
                 medicinales.
@@ -88,16 +96,17 @@
                 <li>Trabaja en el palacio interior.</li>
                 <li>Investiga misterios con ingenio.</li>
               </ul>
+              <span class="boton boton-principal boton-completo">
+                <i class="fa-solid fa-address-card"></i>Abrir Archivo Completo
+              </span>
             </article>
 
             <article class="tarjeta-servicio" id="tarjeta-jinshi">
-              <div class="icono-servicio">
-                <img
-                  src="img/Jinshi.webp"
-                  alt="Jinshi, administrador del palacio"
-                />
-              </div>
+              <span class="expediente">Expediente II · Hougong</span>
               <h3>Jinshi</h3>
+              <div class="icono-servicio">
+                <img src="img/Jinshi.webp" alt="Jinshi, administrador del palacio" />
+              </div>
               <p>
                 Administrador del palacio interior, distinguido y envuelto en
                 intrigas.
@@ -107,19 +116,26 @@
                 <li>Confía en las habilidades de Maomao.</li>
                 <li>Guarda secretos del palacio.</li>
               </ul>
+              <span class="boton boton-principal boton-completo">
+                <i class="fa-solid fa-address-card"></i>Abrir Archivo Completo
+              </span>
             </article>
 
             <article class="tarjeta-servicio" id="tarjeta-gaoshun">
+              <span class="expediente">Expediente III · Hougong</span>
+              <h3>Gaoshun</h3>
               <div class="icono-servicio">
                 <img src="img/Gaoshun.jpg" alt="Gaoshun, asistente de Jinshi" />
               </div>
-              <h3>Gaoshun</h3>
               <p>Leal asistente de Jinshi y apoyo constante en sus tareas.</p>
               <ul>
                 <li>Acompaña a Jinshi en el palacio.</li>
                 <li>Es atento y responsable.</li>
                 <li>Ayuda a mantener el orden.</li>
               </ul>
+              <span class="boton boton-principal boton-completo">
+                <i class="fa-solid fa-address-card"></i>Abrir Archivo Completo
+              </span>
             </article>
           </div>
         </div>
@@ -135,34 +151,74 @@
                 Las plantas pueden aliviar dolencias, aunque algunas esconden
                 peligros. Maomao estudia sus propiedades con cuidado.
               </p>
+              <div class="nota-mueble">
+                <strong>Mueble de las Cien Hierbas (Baizi Gui)</strong>
+                <p>
+                  Cada cajón de madera de cedro resguarda raíces, hojas
+                  desecadas y minerales. La toxicidad varía según la
+                  preparación, la maceración y la interacción con sales de
+                  plomo de los cosméticos cortesanos.
+                </p>
+              </div>
             </div>
-            <div class="panel-caracteristicas">
-              <div class="caracteristica">
-                <span><i class="fa-solid fa-check"></i></span>
-                <div>
-                  <strong>Artemisa</strong>
-                  <p>Hierba aromática conocida por sus usos tradicionales.</p>
+
+            <div class="panel-hierbas">
+              <article class="hierba">
+                <div class="hierba-cabecera">
+                  <h3>Artemisa</h3>
+                  <span class="insignia insignia-seguro">Uso terapéutico seguro</span>
                 </div>
-              </div>
-              <div class="caracteristica">
-                <span><i class="fa-solid fa-check"></i></span>
-                <div>
-                  <strong>Jengibre</strong>
-                  <p>
-                    Raíz de aroma intenso usada en remedios y preparaciones.
-                  </p>
+                <p>Hierba aromática conocida por sus usos tradicionales.</p>
+                <dl>
+                  <div>
+                    <dt>Propiedad</dt>
+                    <dd>Moxibustión y tonificante digestivo.</dd>
+                  </div>
+                  <div>
+                    <dt>Veredicto de Maomao</dt>
+                    <dd class="veredicto">Esencial en el dispensario palaciego.</dd>
+                  </div>
+                </dl>
+              </article>
+
+              <article class="hierba">
+                <div class="hierba-cabecera">
+                  <h3>Jengibre</h3>
+                  <span class="insignia">Estimulante térmico</span>
                 </div>
-              </div>
-              <div class="caracteristica">
-                <span><i class="fa-solid fa-check"></i></span>
-                <div>
-                  <strong>Belladona</strong>
-                  <p>
-                    Planta tóxica que Maomao reconoce y manipula con extrema
-                    precaución.
-                  </p>
+                <p>Raíz de aroma intenso usada en remedios y preparaciones.</p>
+                <dl>
+                  <div>
+                    <dt>Propiedad</dt>
+                    <dd>Calor interno, disipa el frío invernal.</dd>
+                  </div>
+                  <div>
+                    <dt>Veredicto de Maomao</dt>
+                    <dd class="veredicto">Excelente en sopas para concubinas.</dd>
+                  </div>
+                </dl>
+              </article>
+
+              <article class="hierba hierba-peligro">
+                <div class="hierba-cabecera">
+                  <h3>Belladona</h3>
+                  <span class="insignia insignia-peligro">Toxina letal · Peligro</span>
                 </div>
-              </div>
+                <p>
+                  Planta tóxica que Maomao reconoce y manipula con extrema
+                  precaución.
+                </p>
+                <dl>
+                  <div>
+                    <dt>Efecto clínico</dt>
+                    <dd>Dilatación pupilar, parálisis muscular.</dd>
+                  </div>
+                  <div>
+                    <dt>Veredicto de Maomao</dt>
+                    <dd class="veredicto">"Fascinante... pero mortal en sobredosis."</dd>
+                  </div>
+                </dl>
+              </article>
             </div>
           </div>
         </div>
@@ -172,16 +228,12 @@
         <div class="contenedor">
           <div class="contacto">
             <div>
-              <span class="etiqueta">Contacto</span>
+              <span class="etiqueta etiqueta-contacto">Contacto</span>
               <h2>¿Necesitas ayuda?</h2>
               <p>¿Tienes alguna pregunta sobre la historia o sus personajes?</p>
             </div>
             <div>
-              <button
-                type="button"
-                id="btnContacto"
-                class="boton boton-principal"
-              >
+              <button type="button" id="btnContacto" class="boton boton-principal">
                 <i class="fa-solid fa-envelope"></i>
                 Enviar consulta
               </button>
@@ -193,25 +245,25 @@
 
     <footer class="pie">
       <div class="contenedor pie-contenido">
-        <p>Proyecto Actividad 2 - Desarrollo Web. 2026.</p>
-        <p id="anio"></p>
+        <div class="pie-marca">
+          <strong>Los Diarios de una Boticaria</strong>
+          <p>© Palacio Interior Imperial · Kusuriya no Hitorigoto · Registro Médico y Toxicológico</p>
+          <span class="proyecto">Proyecto Actividad 2 - Desarrollo Web. 2026.</span>
+          <p id="anio"></p>
+        </div>
+        <nav class="pie-enlaces">
+          <a href="#inicio">Pabellón de Jade</a>
+          <a href="#remedios">Herbolario de la Corte</a>
+          <a href="#remedios">Protocolos de Toxicología</a>
+          <a href="#contacto">Contacto Imperial</a>
+        </nav>
       </div>
     </footer>
 
-    <!-- ===== MODAL DE CONTACTO (existente) ===== -->
     <div id="modalContacto" class="modal">
       <div class="modal-contenido">
-        <button
-          type="button"
-          id="cerrarModal"
-          class="cerrar-modal"
-          aria-label="Cerrar"
-        >
-          &times;
-        </button>
-        <div class="modal-icono">
-          <i class="fa-solid fa-envelope-open-text"></i>
-        </div>
+        <button type="button" id="cerrarModal" class="cerrar-modal" aria-label="Cerrar">&times;</button>
+        <div class="modal-icono"><i class="fa-solid fa-envelope-open-text"></i></div>
         <h2>Consulta recibida</h2>
         <p>Gracias por tu interés en Los Diarios de una Boticaria.</p>
         <button type="button" id="aceptarModal" class="boton boton-principal">
@@ -220,20 +272,10 @@
       </div>
     </div>
 
-    <!-- ===== MODAL MAOMAO ===== -->
     <div id="modalMaomao" class="modal">
       <div class="modal-contenido modal-personaje">
-        <button
-          type="button"
-          class="cerrar-modal"
-          data-cerrar="modalMaomao"
-          aria-label="Cerrar"
-        >
-          &times;
-        </button>
-        <div class="modal-icono">
-          <i class="fa-solid fa-flask"></i>
-        </div>
+        <button type="button" class="cerrar-modal" data-cerrar="modalMaomao" aria-label="Cerrar">&times;</button>
+        <div class="modal-icono"><i class="fa-solid fa-flask"></i></div>
         <h2>Maomao</h2>
         <p class="modal-subtitulo">La boticaria del palacio interior</p>
         <p>
@@ -243,42 +285,20 @@
         </p>
         <ul class="modal-lista">
           <li><strong>Especialidad:</strong> Farmacología y toxicología.</li>
-          <li>
-            <strong>Rol:</strong> Dama de compañía y probadora de venenos.
-          </li>
-          <li>
-            <strong>Personalidad:</strong> Curiosa, pragmática y algo
-            sarcástica.
-          </li>
-          <li>
-            <strong>Objetivo:</strong> Resolver los misterios que amenazan la
-            corte.
-          </li>
+          <li><strong>Rol:</strong> Dama de compañía y probadora de venenos.</li>
+          <li><strong>Personalidad:</strong> Curiosa, pragmática y algo sarcástica.</li>
+          <li><strong>Objetivo:</strong> Resolver los misterios que amenazan la corte.</li>
         </ul>
-        <button
-          type="button"
-          class="boton boton-principal"
-          data-cerrar="modalMaomao"
-        >
+        <button type="button" class="boton boton-principal" data-cerrar="modalMaomao">
           <i class="fa-solid fa-check"></i> Cerrar
         </button>
       </div>
     </div>
 
-    <!-- ===== MODAL JINSHI ===== -->
     <div id="modalJinshi" class="modal">
       <div class="modal-contenido modal-personaje">
-        <button
-          type="button"
-          class="cerrar-modal"
-          data-cerrar="modalJinshi"
-          aria-label="Cerrar"
-        >
-          &times;
-        </button>
-        <div class="modal-icono">
-          <i class="fa-solid fa-user-tie"></i>
-        </div>
+        <button type="button" class="cerrar-modal" data-cerrar="modalJinshi" aria-label="Cerrar">&times;</button>
+        <div class="modal-icono"><i class="fa-solid fa-user-tie"></i></div>
         <h2>Jinshi</h2>
         <p class="modal-subtitulo">El administrador del palacio interior</p>
         <p>
@@ -288,43 +308,20 @@
         </p>
         <ul class="modal-lista">
           <li><strong>Cargo:</strong> Administrador del palacio interior.</li>
-          <li>
-            <strong>Rol:</strong> Coordina a las damas de la corte y los asuntos
-            internos.
-          </li>
-          <li>
-            <strong>Personalidad:</strong> Carismático, observador y
-            estratégico.
-          </li>
-          <li>
-            <strong>Conexión:</strong> Confía en el ingenio de Maomao para
-            resolver casos.
-          </li>
+          <li><strong>Rol:</strong> Coordina a las damas de la corte y los asuntos internos.</li>
+          <li><strong>Personalidad:</strong> Carismático, observador y estratégico.</li>
+          <li><strong>Conexión:</strong> Confía en el ingenio de Maomao para resolver casos.</li>
         </ul>
-        <button
-          type="button"
-          class="boton boton-principal"
-          data-cerrar="modalJinshi"
-        >
+        <button type="button" class="boton boton-principal" data-cerrar="modalJinshi">
           <i class="fa-solid fa-check"></i> Cerrar
         </button>
       </div>
     </div>
 
-    <!-- ===== MODAL GAOSHUN ===== -->
     <div id="modalGaoshun" class="modal">
       <div class="modal-contenido modal-personaje">
-        <button
-          type="button"
-          class="cerrar-modal"
-          data-cerrar="modalGaoshun"
-          aria-label="Cerrar"
-        >
-          &times;
-        </button>
-        <div class="modal-icono">
-          <i class="fa-solid fa-user-shield"></i>
-        </div>
+        <button type="button" class="cerrar-modal" data-cerrar="modalGaoshun" aria-label="Cerrar">&times;</button>
+        <div class="modal-icono"><i class="fa-solid fa-user-shield"></i></div>
         <h2>Gaoshun</h2>
         <p class="modal-subtitulo">El leal asistente de Jinshi</p>
         <p>
@@ -334,26 +331,16 @@
         </p>
         <ul class="modal-lista">
           <li><strong>Rol:</strong> Asistente personal de Jinshi.</li>
-          <li>
-            <strong>Funciones:</strong> Coordina tareas y mantiene el orden.
-          </li>
+          <li><strong>Funciones:</strong> Coordina tareas y mantiene el orden.</li>
           <li><strong>Personalidad:</strong> Leal, responsable y reservado.</li>
-          <li>
-            <strong>Valor:</strong> Apoyo constante en los momentos más
-            delicados.
-          </li>
+          <li><strong>Valor:</strong> Apoyo constante en los momentos más delicados.</li>
         </ul>
-        <button
-          type="button"
-          class="boton boton-principal"
-          data-cerrar="modalGaoshun"
-        >
+        <button type="button" class="boton boton-principal" data-cerrar="modalGaoshun">
           <i class="fa-solid fa-check"></i> Cerrar
         </button>
       </div>
     </div>
 
-    <!-- Scripts: el de los compañeros primero, el nuevo después -->
     <script src="js/app.js"></script>
     <script src="js/modales-personajes.js"></script>
   </body>

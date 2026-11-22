@@ -64,12 +64,14 @@ if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {
         navigator.serviceWorker.register("./service-worker.js")
             .then(function (registro) {
-                console.info("Service Worker registrado:", registro.scope);
+                console.log("SW: Registro exitoso", registro.scope);
             })
             .catch(function (error) {
-                console.error("No se pudo registrar el Service Worker:", error);
+                console.error("SW: Registro fallido", error);
             });
     });
+} else {
+    console.log("SW: Service Worker no soportado");
 }
 
 const btnInstalar = document.getElementById("btnInstalar");
@@ -79,31 +81,45 @@ let eventoInstalacion = null;
 window.addEventListener("beforeinstallprompt", function (evento) {
     evento.preventDefault();
     eventoInstalacion = evento;
-    btnInstalar.hidden = false;
-});
 
-btnInstalar.addEventListener("click", async function () {
-    if (!eventoInstalacion) {
-        estadoInstalacion.textContent =
-            "La instalación también está disponible desde las opciones del navegador.";
-        return;
+    if (eventoInstalacion && btnInstalar) {
+        btnInstalar.hidden = false;
     }
-
-    eventoInstalacion.prompt();
-    const resultado = await eventoInstalacion.userChoice;
-    estadoInstalacion.textContent = resultado.outcome === "accepted"
-        ? "Instalación aceptada."
-        : "Instalación cancelada.";
-    btnInstalar.hidden = true;
-    eventoInstalacion = null;
 });
+
+if (btnInstalar) {
+    btnInstalar.addEventListener("click", async function () {
+        if (!eventoInstalacion) {
+            if (estadoInstalacion) {
+                estadoInstalacion.textContent =
+                    "La instalación se gestiona desde las opciones del navegador.";
+            }
+            return;
+        }
+
+        eventoInstalacion.prompt();
+        const resultado = await eventoInstalacion.userChoice;
+
+        if (estadoInstalacion) {
+            estadoInstalacion.textContent = resultado.outcome === "accepted"
+                ? "Instalación aceptada."
+                : "Instalación cancelada.";
+        }
+        btnInstalar.hidden = true;
+        eventoInstalacion = null;
+    });
+}
 
 window.addEventListener("appinstalled", function () {
-    estadoInstalacion.textContent = "La aplicación se instaló correctamente.";
-    btnInstalar.hidden = true;
+    if (estadoInstalacion) {
+        estadoInstalacion.textContent = "La aplicación se instaló correctamente.";
+    }
+    if (btnInstalar) {
+        btnInstalar.hidden = true;
+    }
     eventoInstalacion = null;
 });
 
-if (window.matchMedia("(display-mode: standalone)").matches) {
+if (window.matchMedia("(display-mode: standalone)").matches && btnInstalar) {
     btnInstalar.hidden = true;
 }

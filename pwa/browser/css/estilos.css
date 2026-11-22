@@ -481,6 +481,18 @@ a { text-decoration: none; color: inherit; }
 .contacto h2 { margin-bottom: 0.5rem; font-size: 2rem; color: var(--bg); }
 .contacto p { color: rgb(248 240 220 / 0.9); }
 
+.acciones-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.estado-instalacion {
+  flex-basis: 100%;
+  text-align: right;
+}
+
 .pie {
   background: var(--soft);
   border-top: 1px solid var(--border);
@@ -644,5 +656,7 @@ a { text-decoration: none; color: inherit; }
   .titulo-seccion h2 { font-size: 1.6rem; }
   .contacto { flex-direction: column; text-align: center; padding: 1.5rem; }
   .contacto .boton { width: 100%; }
+  .acciones-contacto { width: 100%; }
+  .estado-instalacion { text-align: center; }
   .hierba dl { grid-template-columns: 1fr; }
 }

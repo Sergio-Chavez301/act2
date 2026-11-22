@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Los Diarios de una Boticaria </title>
+    <meta name="theme-color" content="#003629" />
+    <meta name="description" content="Una historia de medicina, misterios e intrigas en el palacio." />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="img/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="img/icons/icon-192.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -232,11 +237,16 @@
               <h2>¿Necesitas ayuda?</h2>
               <p>¿Tienes alguna pregunta sobre la historia o sus personajes?</p>
             </div>
-            <div>
+            <div class="acciones-contacto">
               <button type="button" id="btnContacto" class="boton boton-principal">
                 <i class="fa-solid fa-envelope"></i>
                 Enviar consulta
               </button>
+              <button type="button" id="btnInstalar" class="boton boton-secundario" hidden>
+                <i class="fa-solid fa-download"></i>
+                Instalar aplicación
+              </button>
+              <p id="estadoInstalacion" class="estado-instalacion" aria-live="polite"></p>
             </div>
           </div>
         </div>

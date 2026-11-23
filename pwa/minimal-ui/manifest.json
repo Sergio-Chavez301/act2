@@ -1,6 +1,6 @@
 {
-  "name": "Los Diarios de una Boticaria",
-  "short_name": "Boticaria",
+  "name": "Los Diarios de una Boticaria - Minimal UI",
+  "short_name": "Boticaria - Minimal UI",
   "description": "Una historia de medicina, misterios e intrigas en el palacio.",
   "lang": "es-MX",
   "start_url": "./index.html",
